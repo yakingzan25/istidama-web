@@ -1,75 +1,49 @@
-# Nuxt Minimal Starter
+# 🌱 مؤسسة استدامة للحلول البيئية والتنموية | Istidama Web Platform
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+منصة ويب متكاملة وحديثة مصممة لتقديم حلول الاستدامة، كفاءة الطاقة، والتحول الأخضر، مزوّدة بلوحة تحكم إدارية محمية لإدارة المحتوى لحظياً (Real-time CMS).
 
-## Setup
+🔗 **رابط الموقع الحي (Live Demo):** [https://istidama-web.web.app](https://istidama-web.web.app)
 
-Make sure to install dependencies:
+---
 
-```bash
-# npm
-npm install
+## ✨ أبرز المزايا (Key Features)
 
-# pnpm
-pnpm install
+- **واجهة مستخدم عصرية وتفاعلية (Interactive UI/UX):** تصميم زجاجي داكن (Glassmorphism) متجاوب بالكامل مع جميع الشاشات، يدعم اللغة العربية (RTL) بسلاسة.
+- **حاسبة الأثر البيئي الذكية (Sustainability Impact Simulator):** أداة تفاعلية تتيح للزوار حساب التقدير الفوري لتقليل الانبعاثات الكربونية وتوفير الطاقة بناءً على حجم المنشأة.
+- **تأثيرات بصرية متقدمة:** شريط شركاء متحرك لا نهائي (Infinite Marquee)، عدادات إحصائية حية، شريط تقدم القراءة، وتوهج تفاعلي يتبع مؤشر الماوس.
+- **لوحة تحكم إدارية محمية (`/admin`):**
+  - تعديل هوية المؤسسة، الشعار، الرؤية، الرسالة، وبيانات التواصل لحظياً.
+  - إضافة وحذف الخدمات، الشركاء، والأخبار مع انعكاس التغييرات فوراً على صفحات الزوار.
+  - استقبال وإدارة رسائل الزوار الواردة من صفحة التواصل.
 
-# yarn
-yarn install
+---
 
-# bun
-bun install
-```
+## 🛠️ التقنيات المستخدمة (Tech Stack)
 
-## Development Server
+- **Frontend Framework:** [Nuxt](https://nuxt.com/) & [Vue.js](https://vuejs.org/)
+- **Styling & Icons:** [Tailwind CSS](https://tailwindcss.com/) & [Lucide Vue Icons](https://lucide.dev/)
+- **Database:** [Firebase Cloud Firestore](https://firebase.google.com/docs/firestore) (Real-time synchronization)
+- **Authentication:** [Firebase Authentication](https://firebase.google.com/docs/auth)
+- **Hosting:** [Firebase Hosting](https://firebase.google.com/docs/hosting)
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## 📂 هيكلة المشروع (Project Structure)
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+```text
+istidama-web/
+├── app/
+│   ├── layouts/
+│   │   └── default.vue        # الهيكل العام، الشريط العلوي، والفوتر
+│   ├── pages/
+│   │   ├── index.vue          # الصفحة الرئيسية وحاسبة الأثر البيئي
+│   │   ├── about.vue          # نبذة عن الشركة، الرؤية والرسالة
+│   │   ├── services.vue       # صفحة الخدمات
+│   │   ├── partners.vue       # صفحة شركاء النجاح
+│   │   ├── news.vue           # المركز الإعلامي والأخبار
+│   │   ├── contact.vue        # صفحة التواصل والدعم
+│   │   └── admin.vue          # لوحة التحكم الإدارية المحمية
+│   └── utils/
+│       └── firebase.ts        # إعدادات الربط مع Firebase
+├── nuxt.config.ts             # إعدادات Nuxt
+└── package.json               # الحزم والمكتبات البرمجية
